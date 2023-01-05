@@ -10,25 +10,31 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Mausam">
         <activity
-            android:name=".ui.IntroScreenActivity"
-            android:exported="true" />
+            android:name=".ui.activities.IntroScreenActivity"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"/>
         <activity
-            android:name=".ui.SignUpActivity"
-            android:exported="true" />
+            android:name=".ui.activities.SignUpActivity"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"/>
         <activity
-            android:name=".ui.SplashActivity"
-            android:exported="true" />
-        <activity
-            android:name=".ui.LoginActivity"
-            android:exported="true" />
-        <activity
-            android:name=".ui.MainActivity"
-            android:exported="true">
+            android:name=".ui.activities.SplashActivity"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.activities.LoginActivity"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"/>
+        <activity
+            android:name=".ui.activities.MainActivity"
+            android:exported="true">
+
         </activity>
 
         <meta-data

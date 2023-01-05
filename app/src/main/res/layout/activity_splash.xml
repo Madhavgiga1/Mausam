@@ -7,19 +7,18 @@
     android:layout_height="match_parent"
     android:background="@drawable/bgpics"
     android:gravity="center"
-    tools:context=".ui.SplashActivity">
+    tools:context=".ui.activities.SplashActivity">
 
     <TextView
         android:id="@+id/spashscreentext"
         android:layout_width="match_parent"
         android:layout_height="100dp"
 
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="40dp"
         android:gravity="center_horizontal"
         android:text="Mausam"
         android:textColor="@color/Cream"
         android:textSize="96sp"
-
         app:fontFamily="@font/anton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.48"

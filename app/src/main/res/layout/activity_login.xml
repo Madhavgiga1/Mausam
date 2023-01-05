@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/anotherbgfinal"
     android:orientation="vertical"
-    tools:context=".ui.LoginActivity">
+    tools:context=".ui.activities.LoginActivity">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar_sign_in_activity"
@@ -65,7 +65,7 @@
                     <androidx.appcompat.widget.AppCompatEditText
                         android:id="@+id/et_email"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_height="50dp"
                         android:background="@drawable/textfielsinputshapes"
                         android:hint="@string/email"
                         android:inputType="textEmailAddress"
@@ -84,7 +84,7 @@
                         android:id="@+id/et_password"
                         android:layout_width="match_parent"
                         android:background="@drawable/textfielsinputshapes"
-                        android:layout_height="wrap_content"
+                        android:layout_height="50dp"
                         android:hint="@string/password"
                         android:inputType="textPassword"
                         android:textSize="@dimen/et_text_size" />

@@ -4,6 +4,9 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/sharm/AndroidStudioProjects/Mausam/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.24375" />
+        <entry key="..\:/Users/sharm/AndroidStudioProjects/Mausam/app/src/main/res/drawable/different_login_shape.xml" value="0.35625" />
+        <entry key="..\:/Users/sharm/AndroidStudioProjects/Mausam/app/src/main/res/drawable/login_signup_rectangle.xml" value="0.35625" />
+        <entry key="..\:/Users/sharm/AndroidStudioProjects/Mausam/app/src/main/res/drawable/textfielsinputshapes.xml" value="0.35625" />
         <entry key="..\:/Users/sharm/AndroidStudioProjects/Mausam/app/src/main/res/layout/activity_intro_screen.xml" value="0.2234375" />
         <entry key="..\:/Users/sharm/AndroidStudioProjects/Mausam/app/src/main/res/layout/activity_login.xml" value="0.20153985507246377" />
         <entry key="..\:/Users/sharm/AndroidStudioProjects/Mausam/app/src/main/res/layout/activity_main.xml" value="0.19701086956521738" />
