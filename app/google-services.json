@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "964730177729",
+    "project_id": "mausam-fffca",
+    "storage_bucket": "mausam-fffca.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:964730177729:android:f25ccaee55368c3d3eec40",
+        "android_client_info": {
+          "package_name": "com.example.mausam"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "964730177729-ngpelk06ab57ebfoigou0l3iajev3mr2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCkXKREc39sTOqISemKMfzzoYqOEvy5Ifw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "964730177729-ngpelk06ab57ebfoigou0l3iajev3mr2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

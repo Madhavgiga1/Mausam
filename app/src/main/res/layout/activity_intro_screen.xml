@@ -1,0 +1,52 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.IntroScreenActivity"
+    android:background="@drawable/anotherbgfinal">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:id="@+id/introscreenimage"
+        android:layout_height="500dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/introbg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/SIGNUPBUTTON"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:background="@drawable/login_signup_rectangle"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="CREATE ACCOUNT"
+        android:textColor="@color/ScallopSeashell"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="@id/LOGInBUTTON"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/introscreenimage" />
+    <TextView
+        android:layout_width="350dp"
+        android:id="@+id/LOGInBUTTON"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/SIGNUPBUTTON"
+        android:background="@drawable/different_login_shape"
+        android:textSize="25sp"
+        android:text="LOGIN"
+        android:textColor="@color/ScallopSeashell"
+        android:gravity="center_horizontal|center_vertical"
+        android:layout_marginBottom="90dp"
+        />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
