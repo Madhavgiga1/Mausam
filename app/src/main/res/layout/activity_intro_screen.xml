@@ -26,13 +26,13 @@
         android:text="CREATE ACCOUNT"
         android:textColor="@color/ScallopSeashell"
         android:textSize="25sp"
-        app:layout_constraintBottom_toBottomOf="@id/LOGInBUTTON"
+        app:layout_constraintBottom_toBottomOf="@id/Loginbutton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/introscreenimage" />
     <TextView
         android:layout_width="350dp"
-        android:id="@+id/LOGInBUTTON"
+        android:id="@+id/Loginbutton"
         android:layout_height="50dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

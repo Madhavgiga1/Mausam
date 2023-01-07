@@ -4,15 +4,207 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/mainactivitybg"
     tools:context=".ui.activities.MainActivity">
 
     <TextView
+        android:id="@+id/Location"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="200dp"
+        android:text="Location"
+        android:textColor="@color/white"
+        android:textSize="28sp"
+        app:fontFamily="@font/anton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+    </TextView>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/pressure_box"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+
+        android:layout_marginTop="60dp"
+
+        android:background="@drawable/different_login_shape"
+        app:layout_constraintEnd_toEndOf="@+id/Location"
+        app:layout_constraintStart_toStartOf="@+id/Location"
+        app:layout_constraintTop_toBottomOf="@+id/Location">
+
+        <TextView
+            android:id="@+id/Pressure"
+            android:layout_width="90dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="16dp"
+            android:text="Pressure:"
+            android:textColor="@color/bottomNavBackground"
+            android:textSize="15sp"
+            app:fontFamily="@font/anton"
+            app:layout_constraintBottom_toTopOf="@+id/pressure_value"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.266"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"></TextView>
+
+        <TextView
+            android:id="@+id/pressure_value"
+            android:layout_width="51dp"
+            android:layout_height="13dp"
+            android:layout_marginBottom="44dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/Pressure"
+            app:layout_constraintStart_toStartOf="@+id/Pressure" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="37dp"
+            android:layout_height="40dp"
+            app:layout_constraintBottom_toBottomOf="@+id/Pressure"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/Pressure"
+            app:layout_constraintTop_toTopOf="@+id/Pressure"
+            app:srcCompat="@drawable/pressure_icon" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/precibox"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="40dp"
+        android:background="@drawable/weather_app_box2"
+        app:layout_constraintBottom_toBottomOf="@+id/pressure_box"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toEndOf="@+id/pressure_box"
+        app:layout_constraintTop_toTopOf="@+id/pressure_box"
+        app:layout_constraintVertical_bias="1.0">
+
+        <TextView
+            android:id="@+id/Precipiation"
+            android:layout_width="90dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="16dp"
+            android:text="Precipitation:"
+            android:textColor="@color/BalticSeabgcolor"
+            android:textSize="15sp"
+            app:fontFamily="@font/anton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.266"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"></TextView>
+
+        <TextView
+            android:id="@+id/precipiation_value"
+            android:layout_width="51dp"
+            android:layout_height="13dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/Precipiation"
+            app:layout_constraintStart_toStartOf="@+id/Precipiation"
+            app:layout_constraintTop_toBottomOf="@+id/Precipiation"
+            app:layout_constraintVertical_bias="0.419" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="37dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="2dp"
+            app:layout_constraintBottom_toBottomOf="@+id/Precipiation"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/Precipiation"
+            app:layout_constraintTop_toTopOf="@+id/Precipiation"
+            app:srcCompat="@drawable/preci_icon" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="@drawable/weather_app_box1"
+        android:layout_marginTop="50dp"
+        app:layout_constraintEnd_toEndOf="@+id/pressure_box"
+        app:layout_constraintStart_toStartOf="@+id/pressure_box"
+        app:layout_constraintTop_toBottomOf="@+id/pressure_box">
+
+        <TextView
+            android:id="@+id/humidity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Humidity"
+            android:textSize="15sp"
+            app:fontFamily="@font/anton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.173"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/humidity_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/humidity" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="37dp"
+            android:layout_height="40dp"
+            app:layout_constraintBottom_toBottomOf="@+id/humidity"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/humidity"
+            app:layout_constraintTop_toTopOf="@+id/humidity"
+            app:srcCompat="@drawable/humidity_icon" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:textSize="15sp"
+        android:background="@drawable/login_signup_rectangle"
+        android:layout_marginTop="50dp"
+        app:layout_constraintEnd_toEndOf="@+id/precibox"
+        app:layout_constraintStart_toStartOf="@+id/precibox"
+        app:layout_constraintTop_toBottomOf="@+id/precibox">
+
+        <TextView
+            android:id="@+id/Temprature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Temperature"
+            app:fontFamily="@font/anton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.173"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/Tempearutre_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Temprature" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="37dp"
+            android:layout_height="40dp"
+            app:layout_constraintBottom_toBottomOf="@+id/Temprature"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/Temprature"
+            app:layout_constraintTop_toTopOf="@+id/Temprature"
+            app:srcCompat="@drawable/temp_icon" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

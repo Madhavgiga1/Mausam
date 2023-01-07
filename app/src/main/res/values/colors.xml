@@ -76,4 +76,5 @@
     <color name="anothergoodinputcolor">#FAF0EEE8</color>
     <color name="ggreen">#88A869</color>
     <color name="glightGray">#F9F9F9</color>
+    <color name="mainactivitybg">#272537</color>
 </resources>

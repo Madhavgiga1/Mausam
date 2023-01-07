@@ -19,7 +19,7 @@ class IntroScreenActivity : AppCompatActivity() {
         binding.SIGNUPBUTTON.setOnClickListener {
             startActivity(Intent(this@IntroScreenActivity, SignUpActivity::class.java))
         }
-        binding.LOGInBUTTON.setOnClickListener {
+        binding.Loginbutton.setOnClickListener {
             startActivity(Intent(this@IntroScreenActivity, LoginActivity::class.java))
         }
     }
