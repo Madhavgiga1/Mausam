@@ -52,4 +52,6 @@
     <string name="str_select_label_color">Select Label Color</string>
 
     <string name="str_select_member">Select Member</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
