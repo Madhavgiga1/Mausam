@@ -1,6 +1,6 @@
 package com.example.mausam.di
 
-import com.example.mausam.network.WeatherApi
+import com.example.mausam.data.network.WeatherApi
 import com.example.mausam.util.Constants.Companion.BASE_URL
 import dagger.Module
 import dagger.Provides
