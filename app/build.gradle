@@ -11,7 +11,7 @@ plugins {
 android {
     compileSdk 33
     buildToolsVersion "30.0.3"
-
+    def API_KEY_VALUE = System.getenv("API_KEY")
     defaultConfig {
         applicationId "com.example.mausam"
         minSdkVersion 24
