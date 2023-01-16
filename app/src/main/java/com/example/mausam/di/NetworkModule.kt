@@ -1,7 +1,6 @@
 package com.example.mausam.di
 
 import com.example.mausam.data.network.WeatherApi
-import com.example.mausam.util.Constants.Companion.BASE_URL
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -43,7 +42,7 @@ object NetworkModule {
         gsonConverterFactory: GsonConverterFactory
     ): Retrofit {
         return Retrofit.Builder()
-            .baseUrl(BASE_URL)
+            .baseUrl("http://api.weatherapi.com/v1/")
             .client(okHttpClient)
             .addConverterFactory(gsonConverterFactory).build()
     }
