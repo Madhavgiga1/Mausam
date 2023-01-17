@@ -7,15 +7,15 @@
     android:background="@drawable/anotherbgfinal">
 
     <ImageView
-        android:layout_width="match_parent"
         android:id="@+id/introscreenimage"
-        android:layout_height="500dp"
+        android:layout_width="match_parent"
+        android:layout_height="550dp"
         android:scaleType="centerCrop"
         android:src="@drawable/introbg"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        />
+        app:srcCompat="@drawable/handwriting_dude" />
 
     <TextView
         android:id="@+id/SIGNUPBUTTON"
@@ -26,27 +26,28 @@
         android:text="CREATE ACCOUNT"
         android:textColor="@color/ScallopSeashell"
         android:textSize="25sp"
+        app:fontFamily="@font/anton"
         app:layout_constraintBottom_toBottomOf="@id/Loginbutton"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/introscreenimage" />
+
     <TextView
-        android:layout_width="350dp"
         android:id="@+id/Loginbutton"
+        android:layout_width="350dp"
         android:layout_height="50dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/SIGNUPBUTTON"
+        android:layout_marginTop="12dp"
         android:background="@drawable/different_login_shape"
-        android:textSize="25sp"
+        android:gravity="center_horizontal|center_vertical"
         android:text="LOGIN"
         android:textColor="@color/ScallopSeashell"
-        android:gravity="center_horizontal|center_vertical"
-        android:layout_marginBottom="90dp"
-        />
-
-
+        android:textSize="25sp"
+        app:fontFamily="@font/anton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/SIGNUPBUTTON" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -12,16 +12,16 @@
     <TextView
         android:id="@+id/spashscreentext"
         android:layout_width="match_parent"
-        android:layout_height="100dp"
+        android:layout_height="wrap_content"
 
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="16dp"
         android:gravity="center_horizontal"
         android:text="Mausam"
-        android:textColor="@color/Cream"
+        android:textColor="@color/mainactivitybg"
         android:textSize="96sp"
         app:fontFamily="@font/anton"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

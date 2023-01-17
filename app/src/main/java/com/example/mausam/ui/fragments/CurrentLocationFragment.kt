@@ -20,8 +20,10 @@ import kotlinx.coroutines.ExperimentalCoroutinesApi
 class CurrentLocationFragment : Fragment() {
     private lateinit var networkListener: NetworkListener
     private lateinit var mainViewModel: MainViewModel
+
     private var _binding:FragmentCurrentLocationBinding?=null
     private val binding get()=_binding!!
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         mainViewModel = ViewModelProvider(requireActivity()).get(MainViewModel::class.java)
@@ -33,10 +35,10 @@ class CurrentLocationFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        val mView = FragmentCurrentLocationBinding.inflate(inflater, container, false)
+        val view = FragmentCurrentLocationBinding.inflate(inflater, container, false)
         requestApiData()
-
-        return mView.root
+        _binding=view//important change
+        return view.root
     }
 
     private fun requestApiData() {
@@ -46,9 +48,10 @@ class CurrentLocationFragment : Fragment() {
                 is NetworkResult.Success -> {
 
                     response.data?.let {
-                        binding.humidityValue.text=it?.current.humidity.toString()
-                        binding.pressureValue.text=it?.current.pressureMb.toString()
-                        binding.TempearutreValue.text=it?.current.tempC.toString()
+                        binding.humidityValue.text=it.current.humidity.toString()
+                        binding.pressureValue.text=it.current.pressureMb.toString()
+                        binding.TempearutreValue.text=it.current.tempC.toString()
+                        binding.precipiationValue.text=it.current.precipMm.toString()
 
                     }
                 }

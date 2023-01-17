@@ -7,7 +7,7 @@ import retrofit2.http.QueryMap
 
 interface WeatherApi {
     //base url di me dependency injection use karte time bana hua h
-    @GET(value = "/current.json")
+    @GET(value = "/v1/current.json")
     suspend fun getWeather(
         @QueryMap queries: Map<String, String>
     ): Response<Weather>
