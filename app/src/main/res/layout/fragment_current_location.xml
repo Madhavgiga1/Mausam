@@ -238,20 +238,31 @@
         app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
         app:layout_constraintVertical_bias="0.097">
 
-        <LinearLayout
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/linearLayout"
-            android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_height="70dp"
+            android:layout_height="100dp"
             android:layout_marginStart="5dp"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="12dp"
             android:layout_marginEnd="5dp"
+            android:background="@color/Cream"
+            android:orientation="horizontal"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/air_quality">
 
-        </LinearLayout>
+            <ImageView
+                android:id="@+id/holder1"
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
         <TextView
             android:id="@+id/air_quality"
@@ -276,8 +287,8 @@
             android:layout_marginTop="26dp"
             android:layout_marginBottom="20dp"
             android:text=""
-            android:textColor="@color/BalticSeabgcolor"
-            android:textSize="34sp"
+            android:textColor="@color/Cream"
+            android:textSize="20sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/linearLayout"
@@ -292,11 +303,14 @@
             android:layout_marginEnd="16dp"
             android:layout_marginBottom="20dp"
             android:text=""
-            android:textColor="@color/BalticSeabgcolor"
+            android:textColor="@color/Cream"
+            android:textSize="24sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.477"
             app:layout_constraintStart_toEndOf="@+id/air_quality_value"
-            app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+            app:layout_constraintVertical_bias="0.0" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <TextView
@@ -305,7 +319,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:textColor="@color/anothergoodinputcolor"
-        android:textSize="28sp"
+        android:textSize="20sp"
         android:text=""
         app:fontFamily="@font/anton"
         app:layout_constraintBottom_toBottomOf="@+id/Location"

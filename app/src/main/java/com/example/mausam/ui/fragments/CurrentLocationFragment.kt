@@ -8,6 +8,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.lifecycle.ViewModelProvider
+import com.example.mausam.R
 import com.example.mausam.databinding.FragmentCurrentLocationBinding
 import com.example.mausam.util.Constants
 import com.example.mausam.util.NetworkResult
@@ -52,6 +53,20 @@ class CurrentLocationFragment : Fragment() {
                         binding.pressureValue.text=it.current.pressureMb.toString()
                         binding.TempearutreValue.text=it.current.tempC.toString()
                         binding.precipiationValue.text=it.current.precipMm.toString()
+                        binding.airQualityValue.text=it.current.airQuality.usEpaIndex.toString()
+                        binding.locationValue.text=it.location.name.toString()
+                        if(it.current.airQuality.usEpaIndex in 1..2){
+                            binding.holder1.setImageResource(R.drawable.ic_healthy)
+                            binding.airQualityDesc.text="Healthy"
+                        }
+                        else if(it.current.airQuality.usEpaIndex in 3..4){
+                            binding.holder1.setImageResource(R.drawable.ic_baseline_mood_bad_24)
+                            binding.airQualityDesc.text="Unhealthy"
+                        }
+                        else if(it.current.airQuality.usEpaIndex in 5..6){
+                            binding.holder1.setImageResource(R.drawable.ic_polluted)
+                            binding.airQualityDesc.text="Polluted"
+                        }
 
                     }
                 }
@@ -71,6 +86,7 @@ class CurrentLocationFragment : Fragment() {
         val queries: HashMap<String, String> = HashMap()
         queries["key"] = "e260af43c718433ca69162847230801"
         queries["q"] = "Delhi, India"
+        queries["aqi"]="yes"
 
         return queries
     }
