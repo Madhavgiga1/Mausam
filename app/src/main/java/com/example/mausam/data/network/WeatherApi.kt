@@ -1,6 +1,6 @@
 package com.example.mausam.data.network
 
-import com.example.mausam.models.Weather
+import com.example.mausam.models.CurrentWeather.Weather
 import retrofit2.Response
 import retrofit2.http.GET
 import retrofit2.http.QueryMap

@@ -7,9 +7,14 @@
         <entry key="..\:/Users/sharm/AndroidStudioProjects/Mausam/app/src/main/res/drawable/weather_app_box1.xml" value="0.35625" />
         <entry key="..\:/Users/sharm/AndroidStudioProjects/Mausam/app/src/main/res/layout/activity_intro_screen.xml" value="0.3359375" />
         <entry key="..\:/Users/sharm/AndroidStudioProjects/Mausam/app/src/main/res/layout/activity_login.xml" value="0.3359375" />
-        <entry key="..\:/Users/sharm/AndroidStudioProjects/Mausam/app/src/main/res/layout/activity_main.xml" value="0.16271442986881937" />
+        <entry key="..\:/Users/sharm/AndroidStudioProjects/Mausam/app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="..\:/Users/sharm/AndroidStudioProjects/Mausam/app/src/main/res/layout/activity_splash.xml" value="0.16271442986881937" />
-        <entry key="..\:/Users/sharm/AndroidStudioProjects/Mausam/app/src/main/res/layout/fragment_current_location.xml" value="0.6447368421052632" />
+        <entry key="..\:/Users/sharm/AndroidStudioProjects/Mausam/app/src/main/res/layout/forecast_row_layout.xml" value="0.5734157650695518" />
+        <entry key="..\:/Users/sharm/AndroidStudioProjects/Mausam/app/src/main/res/layout/fragment_current_location.xml" value="0.4395734597156398" />
+        <entry key="..\:/Users/sharm/AndroidStudioProjects/Mausam/app/src/main/res/layout/fragment_forecast.xml" value="0.4" />
+        <entry key="..\:/Users/sharm/AndroidStudioProjects/Mausam/app/src/main/res/layout/fragment_maps.xml" value="0.3359375" />
+        <entry key="..\:/Users/sharm/AndroidStudioProjects/Mausam/app/src/main/res/menu/bottom_nav_menu.xml" value="0.3359375" />
+        <entry key="..\:/Users/sharm/AndroidStudioProjects/Mausam/app/src/main/res/menu/title_menu.xml" value="0.3359375" />
       </map>
     </option>
   </component>

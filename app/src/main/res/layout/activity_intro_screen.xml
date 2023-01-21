@@ -3,19 +3,32 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.activities.IntroScreenActivity"
-    android:background="@drawable/anotherbgfinal">
+    android:background="@drawable/anotherbgfinal"
+    tools:context=".ui.activities.IntroScreenActivity">
 
-    <ImageView
+    <com.google.android.material.card.MaterialCardView
         android:id="@+id/introscreenimage"
         android:layout_width="match_parent"
-        android:layout_height="550dp"
-        android:scaleType="centerCrop"
-        android:src="@drawable/introbg"
+        android:layout_height="530dp"
+        app:cardCornerRadius="15dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/handwriting_dude" />
+        app:layout_goneMarginEnd="4dp"
+        app:layout_goneMarginStart="4dp">
+
+        <ImageView
+            android:id="@+id/introscreenimage_1"
+            android:layout_width="match_parent"
+            android:layout_height="520dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/introbg"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/handwriting_dude" />
+    </com.google.android.material.card.MaterialCardView>
+
 
     <TextView
         android:id="@+id/SIGNUPBUTTON"
@@ -26,12 +39,11 @@
         android:text="CREATE ACCOUNT"
         android:textColor="@color/ScallopSeashell"
         android:textSize="25sp"
-        app:fontFamily="@font/anton"
-        app:layout_constraintBottom_toBottomOf="@id/Loginbutton"
+        app:fontFamily="@font/alegreya_sans_extrabold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/introscreenimage" />
+        tools:layout_editor_absoluteY="603dp" />
 
     <TextView
         android:id="@+id/Loginbutton"
@@ -43,11 +55,25 @@
         android:text="LOGIN"
         android:textColor="@color/ScallopSeashell"
         android:textSize="25sp"
+        app:fontFamily="@font/alegreya_sans_extrabold"
+        app:layout_constraintEnd_toEndOf="@+id/SIGNUPBUTTON"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/SIGNUPBUTTON"
+        app:layout_constraintTop_toBottomOf="@+id/SIGNUPBUTTON" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:text="Welcome TO Mausam app"
+        android:textColor="@color/BalticSeabgcolor"
+        android:textSize="29sp"
         app:fontFamily="@font/anton"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.491"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/SIGNUPBUTTON" />
+        app:layout_constraintEnd_toEndOf="@+id/introscreenimage"
+        app:layout_constraintHorizontal_bias="0.458"
+        app:layout_constraintStart_toStartOf="@+id/introscreenimage"
+        app:layout_constraintTop_toBottomOf="@+id/introscreenimage" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

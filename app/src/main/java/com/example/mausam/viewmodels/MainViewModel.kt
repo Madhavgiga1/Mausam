@@ -8,7 +8,7 @@ import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.viewModelScope
 import com.example.mausam.data.Repository
-import com.example.mausam.models.Weather
+import com.example.mausam.models.CurrentWeather.Weather
 import com.example.mausam.util.NetworkResult
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.launch

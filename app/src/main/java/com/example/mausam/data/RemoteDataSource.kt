@@ -1,6 +1,6 @@
 package com.example.mausam.data
 
-import com.example.mausam.models.Weather
+import com.example.mausam.models.CurrentWeather.Weather
 import com.example.mausam.data.network.WeatherApi
 import retrofit2.Response
 import javax.inject.Inject

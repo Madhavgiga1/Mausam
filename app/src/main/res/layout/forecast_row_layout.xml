@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/Weather_row_layout"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:strokeColor="@color/GunmetalGray"
+        app:cardCornerRadius="15dp"
+        android:padding="10dp"
+        app:strokeWidth="3dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/quantum_bluegrey100">
+
+            <ImageView
+                android:id="@+id/forecast_image"
+                android:layout_width="150dp"
+                android:layout_height="180dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <TextView
+                android:id="@+id/sunrise_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:text="Sunrise Time:"
+                app:fontFamily="sans-serif-condensed-medium"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/sunset_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="44dp"
+                android:layout_marginTop="16dp"
+                android:text="Sunset Time:"
+                app:fontFamily="sans-serif-condensed-medium"
+                app:layout_constraintStart_toEndOf="@+id/sunrise_text"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/sunset_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="28dp"
+                app:fontFamily="@font/anton"
+                app:layout_constraintBottom_toBottomOf="@+id/sunset_text"
+                app:layout_constraintEnd_toStartOf="@+id/forecast_image"
+                app:layout_constraintTop_toTopOf="@+id/sunset_text"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/sunrise_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="36dp"
+                app:layout_constraintBottom_toBottomOf="@+id/sunrise_text"
+                app:layout_constraintEnd_toStartOf="@+id/sunset_text"
+                app:layout_constraintTop_toTopOf="@+id/sunrise_text"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/Min_Temperature"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Min Temperature:"
+                app:fontFamily="sans-serif-condensed-medium"
+                app:layout_constraintEnd_toEndOf="@+id/sunrise_text"
+                app:layout_constraintHorizontal_bias="0.636"
+                app:layout_constraintStart_toStartOf="@+id/sunrise_text"
+                app:layout_constraintTop_toBottomOf="@+id/sunrise_text" />
+
+            <TextView
+                android:id="@+id/Max_temp_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Max Temperature"
+                app:fontFamily="sans-serif-condensed-medium"
+                app:layout_constraintEnd_toEndOf="@+id/sunset_text"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/sunset_text"
+                app:layout_constraintTop_toBottomOf="@+id/sunset_text" />
+
+            <TextView
+                android:id="@+id/Mintemp_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#4A8AA9"
+                android:layout_marginTop="91dp"
+                app:layout_constraintEnd_toEndOf="@+id/Min_Temperature"
+                app:layout_constraintStart_toStartOf="@+id/Min_Temperature"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/min_temp_value"
+                android:layout_width="wrap_content"
+                android:textColor="@color/quantum_amberA200"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="91dp"
+                app:layout_constraintEnd_toEndOf="@+id/Max_temp_text"
+                app:layout_constraintHorizontal_bias="0.504"
+                app:layout_constraintStart_toStartOf="@+id/Max_temp_text"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/Date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Date"
+                app:fontFamily="sans-serif-condensed-medium"
+                app:layout_constraintEnd_toEndOf="@+id/Min_Temperature"
+                app:layout_constraintHorizontal_bias="0.19"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Mintemp_value" />
+
+            <TextView
+                android:id="@+id/Location_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Location:"
+                app:fontFamily="sans-serif-condensed-medium"
+                app:layout_constraintEnd_toEndOf="@+id/Max_temp_text"
+                app:layout_constraintStart_toEndOf="@+id/Date"
+                app:layout_constraintTop_toBottomOf="@+id/min_temp_value" />
+
+            <TextView
+                android:id="@+id/locat_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="80dp"
+                app:fontFamily="@font/anton"
+                app:layout_constraintBottom_toBottomOf="@+id/Location_text"
+                app:layout_constraintEnd_toStartOf="@+id/forecast_image"
+                app:layout_constraintTop_toTopOf="@+id/Location_text"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <TextView
+                android:id="@+id/Description_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="Description:"
+                app:fontFamily="sans-serif-condensed-medium"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Date"
+                app:layout_constraintVertical_bias="0.555" />
+
+            <TextView
+                android:id="@+id/desc_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="96dp"
+                app:fontFamily="@font/anton"
+                app:layout_constraintBottom_toBottomOf="@+id/Description_text"
+                app:layout_constraintEnd_toEndOf="@+id/locat_value"
+                app:layout_constraintTop_toTopOf="@+id/Description_text"
+                app:layout_constraintVertical_bias="1.0" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

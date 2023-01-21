@@ -50,6 +50,7 @@
     <string name="no">No</string>
 
     <string name="str_select_label_color">Select Label Color</string>
+    <string name="google_maps_api_key">AI</string>
 
     <string name="str_select_member">Select Member</string>
     <!-- TODO: Remove or change this placeholder text -->

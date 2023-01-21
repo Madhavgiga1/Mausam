@@ -1,4 +1,4 @@
-package com.example.mausam.models
+package com.example.mausam.models.CurrentWeather
 
 
 import com.google.gson.annotations.SerializedName

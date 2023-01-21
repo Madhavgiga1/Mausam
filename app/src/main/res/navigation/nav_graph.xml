@@ -8,11 +8,30 @@
     <fragment
         android:id="@+id/currentLocationFragment"
         android:name="com.example.mausam.ui.fragments.CurrentLocationFragment"
-        android:label="fragment_current_location"
-        tools:layout="@layout/fragment_current_location" />
+        android:label="com.example.mausam.models.ForecastModels.Current Location Weather"
+        tools:layout="@layout/fragment_current_location" >
+        <action
+            android:id="@+id/action_currentLocationFragment_to_mapsFragment"
+            app:destination="@id/mapsFragment" />
+    </fragment>
     <activity
         android:id="@+id/mainActivity"
         android:name="com.example.mausam.ui.activities.MainActivity"
         android:label="activity_main"
         tools:layout="@layout/activity_main" />
+    <fragment
+        android:id="@+id/favoriteFragment"
+        android:name="com.example.mausam.ui.fragments.FavoriteFragment"
+        android:label="Favorite Location"
+        tools:layout="@layout/fragment_favorite" />
+    <fragment
+        android:id="@+id/forecastFragment"
+        android:name="com.example.mausam.ui.fragments.ForecastFragment"
+        android:label="com.example.mausam.models.ForecastModels.Forecast"
+        tools:layout="@layout/fragment_forecast" />
+    <fragment
+        android:id="@+id/mapsFragment"
+        android:name="com.example.mausam.MapsFragment"
+        android:label="fragment_maps"
+        tools:layout="@layout/fragment_maps" />
 </navigation>

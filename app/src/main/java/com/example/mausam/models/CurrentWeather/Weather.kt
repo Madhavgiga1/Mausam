@@ -1,8 +1,8 @@
-package com.example.mausam.models
+package com.example.mausam.models.CurrentWeather
 
 
-import com.example.mausam.models.Current
-import com.example.mausam.models.Location
+import com.example.mausam.models.CurrentWeather.Current
+import com.example.mausam.models.CurrentWeather.Location
 import com.google.gson.annotations.SerializedName
 
 data class Weather(

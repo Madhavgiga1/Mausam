@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/currentLocationFragment"
+        android:title="com.example.mausam.models.ForecastModels.Current"
+        android:icon="@drawable/ic_location"
+        android:iconTint="@color/BalticSeabgcolor"
+        >
+    </item>
+    <item
+        android:id="@+id/forecastFragment"
+        android:title="com.example.mausam.models.ForecastModels.Forecast"
+        android:icon="@drawable/ic_baseline_cloud_24">
+    </item>
+    <item
+        android:id="@+id/favoriteFragment"
+        android:title="Favorite"
+        android:iconTint="#B39A51"
+        android:icon="@drawable/ic_baseline_star_24">
+    </item>
+
+
+</menu>

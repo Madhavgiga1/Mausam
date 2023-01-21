@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <array name="preloaded_fonts" translatable="false">
+        <item>@font/alegreya_sans_extrabold</item>
         <item>@font/andika</item>
         <item>@font/anton</item>
+        <item>@font/kelly_slab</item>
+        <item>@font/laila_light</item>
+        <item>@font/laila_medium</item>
+        <item>@font/laila_semibold</item>
     </array>
 </resources>
