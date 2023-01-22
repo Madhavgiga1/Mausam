@@ -8,12 +8,10 @@
  User can either select a location they want to get weather and air quality information
 about.The user first would have to login to the app.
 
- 
-
 
 ## Demo
 
-file:///C:/Users/sharm/Downloads/ezgif.com-gif-maker(2).gif
+![ezgif com-gif-maker(2)](https://user-images.githubusercontent.com/77728555/213925836-fc9c5cd1-0f0f-41da-8743-ec50e47e0106.gif)
 
 
 
@@ -43,14 +41,9 @@ file:///C:/Users/sharm/Downloads/ezgif.com-gif-maker(2).gif
 
 
 
-
-
-
-
 ## 🚀 About Me
-I'm a full stack developer...
+I'm an android developer based in India.I develop my app with Kotlin and try to use the best software development practices out there to develop my apps
 
 
-## 🛠 Skills
-Javascript, HTML, CSS...
+
 
