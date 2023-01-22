@@ -11,7 +11,8 @@ about.The user first would have to login to the app.
 
 ## Demo
 
-![ezgif com-gif-maker(2)](https://user-images.githubusercontent.com/77728555/213925836-fc9c5cd1-0f0f-41da-8743-ec50e47e0106.gif)
+
+![ezgif com-gif-maker(4)](https://user-images.githubusercontent.com/77728555/213926437-b8e32ef5-0f5e-4a0a-8fcc-b8548951b912.gif)
 
 
 
