@@ -1,6 +1,9 @@
 package com.example.mausam.data.network
 
+import com.example.mausam.Forecast
+import com.example.mausam.Forecast_Weather
 import com.example.mausam.models.CurrentWeather.Weather
+
 import retrofit2.Response
 import retrofit2.http.GET
 import retrofit2.http.QueryMap
@@ -11,6 +14,10 @@ interface WeatherApi {
     suspend fun getWeather(
         @QueryMap queries: Map<String, String>
     ): Response<Weather>
+
+    @GET(value="/v1/forecast.json")
+    suspend fun getForecast(@QueryMap forecastqueries: Map<String, String>)
+    :Response<Forecast_Weather>
 }
 
 /*In Retrofit, an interface is used to define the methods that can be called on a REST API. It is a contract that specifies the request methods, the relative URL paths, and the

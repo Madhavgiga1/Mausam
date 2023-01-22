@@ -1,6 +1,6 @@
-package com.example.mausam.models.ForecastModels
+package com.example.mausam
 
-import com.example.mausam.models.ForecastModels.Hour
+
 import com.google.gson.annotations.SerializedName
 
 data class Forecastday(

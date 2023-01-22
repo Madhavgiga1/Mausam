@@ -106,7 +106,7 @@ class CurrentLocationFragment : Fragment(),SearchView.OnQueryTextListener  {
                 is NetworkResult.Success -> {
 
                     response.data?.let {
-                        binding.humidityValue.text=it.current.humidity.toString()
+                        binding.humidityValue.text=it.current.humidity.toString()+" %"
                         binding.pressureValue.text=it.current.pressureMb.toString()+" Mb"
                         binding.tempValue.text=it.current.tempC.toString()+" C"
                         binding.feelsLikeValue.text=it.current.feelslikeC.toString()+" C"
@@ -116,7 +116,7 @@ class CurrentLocationFragment : Fragment(),SearchView.OnQueryTextListener  {
                         binding.coValue.text=it.current.airQuality.co.toString()
                         binding.no2Value.text=it.current.airQuality.no2.toString()
                         binding.so2Value.text=it.current.airQuality.so2.toString()
-                        binding.coValue.text=it.current.airQuality.co.toString()
+                        binding.o3Value.text=it.current.airQuality.o3.toString()
                         binding.uvValue.text=it.current.uv.toString()
                         if(it.current.airQuality.usEpaIndex in 1..2){
                             binding.airQualityImage22.setImageResource(R.drawable.plant)

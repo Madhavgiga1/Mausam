@@ -1,5 +1,6 @@
-package com.example.mausam.models.ForecastModels
-import com.example.mausam.models.ForecastModels.Condition
+package com.example.mausam
+
+
 import com.google.gson.annotations.SerializedName
 
 data class Day(

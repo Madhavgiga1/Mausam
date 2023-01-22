@@ -4,15 +4,23 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
+import com.example.mausam.Forecast
+import com.example.mausam.Forecastday
 import com.example.mausam.databinding.ForecastRowLayoutBinding
 
+
+import com.example.mausam.util.ForecastDiffUtil
+
 class Forecastadapter:RecyclerView.Adapter<Forecastadapter.MyViewHolder>(){
-    class MyViewHolder(private var binding: ForecastRowLayoutBinding):RecyclerView.ViewHolder(binding.root){
+    private var forecast= emptyList<Forecastday>()
+
+    class MyViewHolder(private val binding: ForecastRowLayoutBinding):RecyclerView.ViewHolder(binding.root){
+        fun bind(forecaster: Forecastday){
+            binding.forecastday=forecaster
+            binding.executePendingBindings()
+        }
         companion object{
-            /*fun bind(result: Result){
-                binding.result=result
-                binding.executePendingBindings()
-            }*/
+
             fun from(parent: ViewGroup):MyViewHolder{
                 val layoutInflater=LayoutInflater.from(parent.context)
                 val binding=ForecastRowLayoutBinding.inflate(layoutInflater,parent,false)
@@ -27,22 +35,22 @@ class Forecastadapter:RecyclerView.Adapter<Forecastadapter.MyViewHolder>(){
     }
 
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
-        //val currentRecipe = recipes[position]
-        //holder.bind(currentRecipe)*/
-        TODO()
+        val currentforecast =forecast[position]
+        holder.bind(currentforecast)
+
     }
 
     override fun getItemCount(): Int {
-        //return recipes.size
-        TODO()
+        return forecast.size
+
     }
-    /*fun setData(newData: FoodRecipe){
+    fun setData(newData: Forecast){
         val forecastDiffUtil =
-            ForecastDiffUtil(recipes, newData.results)
-        val diffUtilResult = DiffUtil.calculateDiff(recipesDiffUtil)
-        recipes = newData.results
+            ForecastDiffUtil(forecast, newData.forecastday)
+        val diffUtilResult = DiffUtil.calculateDiff(forecastDiffUtil)
+        forecast = newData.forecastday
         diffUtilResult.dispatchUpdatesTo(this)
-    }*/
+    }
 
 }
 

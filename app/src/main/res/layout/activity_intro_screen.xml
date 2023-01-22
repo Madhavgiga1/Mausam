@@ -34,6 +34,7 @@
         android:id="@+id/SIGNUPBUTTON"
         android:layout_width="350dp"
         android:layout_height="50dp"
+        android:layout_marginTop="9dp"
         android:background="@drawable/login_signup_rectangle"
         android:gravity="center_horizontal|center_vertical"
         android:text="CREATE ACCOUNT"
@@ -43,7 +44,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="603dp" />
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <TextView
         android:id="@+id/Loginbutton"
@@ -65,13 +66,13 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="14dp"
+        android:layout_marginTop="20dp"
         android:text="Welcome TO Mausam app"
         android:textColor="@color/BalticSeabgcolor"
         android:textSize="29sp"
         app:fontFamily="@font/anton"
         app:layout_constraintEnd_toEndOf="@+id/introscreenimage"
-        app:layout_constraintHorizontal_bias="0.458"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="@+id/introscreenimage"
         app:layout_constraintTop_toBottomOf="@+id/introscreenimage" />
 

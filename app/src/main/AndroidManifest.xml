@@ -41,7 +41,9 @@
         <activity
             android:name=".ui.activities.IntroScreenActivity"
             android:exported="true"
-            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" >
+
+        </activity>
         <activity
             android:name=".ui.activities.SignUpActivity"
             android:exported="true"
@@ -49,7 +51,9 @@
         <activity
             android:name=".ui.activities.SplashActivity"
             android:exported="true"
-            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"></activity>
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
+
+        </activity>
         <activity
             android:name=".ui.activities.LoginActivity"
             android:exported="true"
@@ -63,6 +67,7 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
         </activity>
 
 

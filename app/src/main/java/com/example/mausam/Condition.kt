@@ -1,4 +1,6 @@
-package com.example.mausam.models.ForecastModels
+package com.example.mausam
+
+
 import com.google.gson.annotations.SerializedName
 
 data class Condition(
