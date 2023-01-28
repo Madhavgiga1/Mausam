@@ -571,5 +571,19 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
 
+    <TextView
+        android:id="@+id/location_curr_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/Cream"
+        android:textSize="28sp"
+        app:fontFamily="@font/laila_semibold"
+        android:layout_marginStart="52dp"
+        android:text="Jaipur"
+        app:layout_constraintBottom_toBottomOf="@+id/Location_text"
+        app:layout_constraintStart_toEndOf="@+id/Location_text"
+        app:layout_constraintTop_toTopOf="@+id/Location_text"
+        app:layout_constraintVertical_bias="0.478" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

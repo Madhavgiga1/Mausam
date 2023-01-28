@@ -21,17 +21,33 @@
         tools:layout="@layout/activity_main" />
     <fragment
         android:id="@+id/favoriteFragment"
-        android:name="com.example.mausam.ui.fragments.FavoriteFragment"
+        android:name="com.example.mausam.ui.fragments.HistoricalFragment"
         android:label="Favorite Location"
-        tools:layout="@layout/fragment_favorite" />
+        tools:layout="@layout/fragment_historical" />
     <fragment
         android:id="@+id/forecastFragment"
         android:name="com.example.mausam.ui.fragments.ForecastFragment"
         android:label="com.example.mausam.models.ForecastModels.Forecast"
-        tools:layout="@layout/fragment_forecast" />
+        tools:layout="@layout/fragment_forecast" >
+        <action
+            android:id="@+id/action_forecastFragment_to_hourForecastFragment"
+            app:destination="@id/hourForecastFragment" />
+    </fragment>
     <fragment
         android:id="@+id/mapsFragment"
         android:name="com.example.mausam.MapsFragment"
         android:label="fragment_maps"
         tools:layout="@layout/fragment_maps" />
+    <fragment
+        android:id="@+id/hourForecastFragment"
+        android:name="com.example.mausam.ui.fragments.HourForecastFragment"
+        android:label="fragment_hour_forecast"
+        tools:layout="@layout/fragment_hour_forecast" >
+        <action
+            android:id="@+id/action_hourForecastFragment_to_forecastFragment"
+            app:destination="@id/forecastFragment" />
+        <argument
+            android:name="result"
+            app:argType="com.example.mausam.Forecastday" />
+    </fragment>
 </navigation>

@@ -8,11 +8,16 @@
         <entry key="..\:/Users/sharm/AndroidStudioProjects/Mausam/app/src/main/res/layout/activity_intro_screen.xml" value="0.3359375" />
         <entry key="..\:/Users/sharm/AndroidStudioProjects/Mausam/app/src/main/res/layout/activity_login.xml" value="0.3359375" />
         <entry key="..\:/Users/sharm/AndroidStudioProjects/Mausam/app/src/main/res/layout/activity_main.xml" value="0.1" />
-        <entry key="..\:/Users/sharm/AndroidStudioProjects/Mausam/app/src/main/res/layout/activity_splash.xml" value="0.16271442986881937" />
+        <entry key="..\:/Users/sharm/AndroidStudioProjects/Mausam/app/src/main/res/layout/activity_sign_up.xml" value="0.264" />
+        <entry key="..\:/Users/sharm/AndroidStudioProjects/Mausam/app/src/main/res/layout/activity_splash.xml" value="0.264" />
         <entry key="..\:/Users/sharm/AndroidStudioProjects/Mausam/app/src/main/res/layout/forecast_row_layout.xml" value="0.536" />
         <entry key="..\:/Users/sharm/AndroidStudioProjects/Mausam/app/src/main/res/layout/fragment_current_location.xml" value="0.4395734597156398" />
+        <entry key="..\:/Users/sharm/AndroidStudioProjects/Mausam/app/src/main/res/layout/fragment_day_forecast.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/sharm/AndroidStudioProjects/Mausam/app/src/main/res/layout/fragment_favorite.xml" value="0.3359375" />
         <entry key="..\:/Users/sharm/AndroidStudioProjects/Mausam/app/src/main/res/layout/fragment_forecast.xml" value="0.4" />
+        <entry key="..\:/Users/sharm/AndroidStudioProjects/Mausam/app/src/main/res/layout/fragment_hour_forecast.xml" value="0.35260416666666666" />
         <entry key="..\:/Users/sharm/AndroidStudioProjects/Mausam/app/src/main/res/layout/fragment_maps.xml" value="0.3359375" />
+        <entry key="..\:/Users/sharm/AndroidStudioProjects/Mausam/app/src/main/res/layout/hourly_forecast_row_layout.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/sharm/AndroidStudioProjects/Mausam/app/src/main/res/menu/bottom_nav_menu.xml" value="0.3359375" />
         <entry key="..\:/Users/sharm/AndroidStudioProjects/Mausam/app/src/main/res/menu/title_menu.xml" value="0.3359375" />
       </map>

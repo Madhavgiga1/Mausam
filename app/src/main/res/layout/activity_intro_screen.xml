@@ -3,39 +3,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/anotherbgfinal"
+    android:background="@color/ScallopSeashell"
     tools:context=".ui.activities.IntroScreenActivity">
-
-    <com.google.android.material.card.MaterialCardView
-        android:id="@+id/introscreenimage"
-        android:layout_width="match_parent"
-        android:layout_height="530dp"
-        app:cardCornerRadius="15dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_goneMarginEnd="4dp"
-        app:layout_goneMarginStart="4dp">
-
-        <ImageView
-            android:id="@+id/introscreenimage_1"
-            android:layout_width="match_parent"
-            android:layout_height="520dp"
-            android:scaleType="centerCrop"
-            android:src="@drawable/introbg"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/handwriting_dude" />
-    </com.google.android.material.card.MaterialCardView>
 
 
     <TextView
         android:id="@+id/SIGNUPBUTTON"
         android:layout_width="350dp"
         android:layout_height="50dp"
-        android:layout_marginTop="9dp"
-        android:background="@drawable/login_signup_rectangle"
+        android:layout_marginTop="29dp"
+        android:background="@drawable/different_login_shape"
         android:gravity="center_horizontal|center_vertical"
         android:text="CREATE ACCOUNT"
         android:textColor="@color/ScallopSeashell"
@@ -51,10 +28,10 @@
         android:layout_width="350dp"
         android:layout_height="50dp"
         android:layout_marginTop="12dp"
-        android:background="@drawable/different_login_shape"
+        android:background="@drawable/textfielsinputshapes"
         android:gravity="center_horizontal|center_vertical"
         android:text="LOGIN"
-        android:textColor="@color/ScallopSeashell"
+        android:textColor="@color/BalticSeabgcolor"
         android:textSize="25sp"
         app:fontFamily="@font/alegreya_sans_extrabold"
         app:layout_constraintEnd_toEndOf="@+id/SIGNUPBUTTON"
@@ -66,15 +43,28 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:text="Welcome TO Mausam app"
+        android:layout_marginTop="10dp"
+        android:text="Welcome To Mausam app"
         android:textColor="@color/BalticSeabgcolor"
         android:textSize="29sp"
-        app:fontFamily="@font/anton"
-        app:layout_constraintEnd_toEndOf="@+id/introscreenimage"
-        app:layout_constraintHorizontal_bias="0.495"
-        app:layout_constraintStart_toStartOf="@+id/introscreenimage"
-        app:layout_constraintTop_toBottomOf="@+id/introscreenimage" />
+        app:fontFamily="sans-serif-condensed-medium"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.382"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="347dp"
+        android:layout_height="326dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Loginbutton"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/salad" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

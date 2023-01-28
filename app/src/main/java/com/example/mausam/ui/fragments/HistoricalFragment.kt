@@ -7,7 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import com.example.mausam.R
 
-class FavoriteFragment : Fragment() {
+class HistoricalFragment : Fragment() {
 
 
 
@@ -16,7 +16,7 @@ class FavoriteFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
 
-        return inflater.inflate(R.layout.fragment_favorite, container, false)
+        return inflater.inflate(R.layout.fragment_historical, container, false)
     }
 
 

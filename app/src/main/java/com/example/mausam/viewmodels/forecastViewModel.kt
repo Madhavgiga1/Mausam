@@ -33,7 +33,7 @@ class ForecastViewModel @Inject constructor(
         forecastResponse.value=NetworkResult.Loading()
         if(hasInternetConnection()){
             try {
-                val response=repository.remote.getForecast(queries)
+                val response=repository.remote.getForecast(queries)//the response received from retrofit
                 forecastResponse.value=handleForecastResponse(response)
             }catch (e:Exception){
                 forecastResponse.value = NetworkResult.Error("Weather error not found.")

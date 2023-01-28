@@ -1,33 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
     <data>
         <variable
-            name="forecastday"
-            type="com.example.mausam.Forecastday" />
-
+            name="hourlyforecast"
+            type="com.example.mausam.Hour" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:layout_width="match_parent"
         android:layout_marginTop="4dp"
         android:layout_marginLeft="2dp"
         android:layout_marginRight="2dp"
         android:layout_marginBottom="4dp"
-        android:layout_width="match_parent"
         android:id="@+id/Weather_row_layout"
-        onWeatherClickListener="@{forecastday}"
+
         android:layout_height="wrap_content">
 
         <com.google.android.material.card.MaterialCardView
             android:layout_width="match_parent"
             android:layout_height="200dp"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_goneMarginStart="5dp"
             app:layout_goneMarginEnd="5dp"
             app:layout_goneMarginTop="5dp"
             app:layout_goneMarginBottom="5dp"
-            app:layout_constraintEnd_toEndOf="parent"
             app:strokeColor="@color/BalticSeabgcolor"
             app:cardCornerRadius="15dp"
             android:padding="10dp"
@@ -39,11 +41,11 @@
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@color/quantum_bluegrey100">
+                android:background="#96A2A6">
 
                 <ImageView
                     android:id="@+id/forecast_image"
-                    loadImageFromUrl="@{forecastday.day.condition.icon}"
+
                     android:layout_width="100dp"
                     android:layout_height="180dp"
                     android:layout_marginEnd="4dp"
@@ -58,7 +60,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="8dp"
                     android:layout_marginTop="16dp"
-                    android:text="Sunrise Time:"
+                    android:text="Rain Chances:"
                     android:textSize="14sp"
                     app:fontFamily="sans-serif-condensed-medium"
                     app:layout_constraintStart_toStartOf="parent"
@@ -70,7 +72,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="64dp"
                     android:layout_marginTop="16dp"
-                    android:text="Sunset Time:"
+                    android:text="UV:"
                     android:textSize="14sp"
                     app:fontFamily="sans-serif-condensed-medium"
                     app:layout_constraintStart_toEndOf="@+id/sunrise_text"
@@ -80,20 +82,21 @@
                     android:id="@+id/UV_value"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@{forecastday.astro.sunset}"
+                    android:layout_marginStart="12dp"
+                    android:text="@{String.valueOf(hourlyforecast.uv)}"
                     android:textSize="14sp"
                     app:fontFamily="@font/anton"
                     app:layout_constraintBottom_toBottomOf="@+id/uv_text"
                     app:layout_constraintStart_toEndOf="@+id/uv_text"
                     app:layout_constraintTop_toTopOf="@+id/uv_text"
-                    app:layout_constraintVertical_bias="0.666" />
+                    app:layout_constraintVertical_bias="1.0" />
 
                 <TextView
                     android:id="@+id/Rainchances_value"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="8dp"
-                    android:text="@{forecastday.astro.sunrise}"
+                    android:text="@{String.valueOf(hourlyforecast.chanceOfRain)}"
                     android:textSize="14sp"
                     app:fontFamily="@font/anton"
                     app:layout_constraintBottom_toBottomOf="@+id/sunrise_text"
@@ -105,12 +108,13 @@
                     android:id="@+id/Min_Temperature"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
                     android:layout_marginTop="20dp"
-                    android:text="Min Temperature:"
 
+                    android:text="Temperature:"
                     app:fontFamily="sans-serif-condensed-medium"
                     app:layout_constraintEnd_toEndOf="@+id/sunrise_text"
-                    app:layout_constraintHorizontal_bias="0.636"
+                    app:layout_constraintHorizontal_bias="0.36"
                     app:layout_constraintStart_toStartOf="@+id/sunrise_text"
                     app:layout_constraintTop_toBottomOf="@+id/sunrise_text" />
 
@@ -120,10 +124,10 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="20dp"
 
-                    android:text="Max Temperature"
+                    android:text="WindSpeed(kPH)"
                     app:fontFamily="sans-serif-condensed-medium"
                     app:layout_constraintEnd_toEndOf="@+id/uv_text"
-                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintHorizontal_bias="0.392"
                     app:layout_constraintStart_toStartOf="@+id/uv_text"
                     app:layout_constraintTop_toBottomOf="@+id/uv_text" />
 
@@ -132,7 +136,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="84dp"
-                    android:text="@{String.valueOf(forecastday.day.mintempC)}"
+                    android:text="@{String.valueOf(hourlyforecast.tempC)}"
                     android:textColor="#4A8AA9"
                     android:textSize="20sp"
                     app:fontFamily="@font/anton"
@@ -146,7 +150,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="84dp"
-                    android:text="@{String.valueOf(forecastday.day.maxtempC)}"
+                    android:text="@{String.valueOf(hourlyforecast.windKph)}"
                     android:textColor="@color/quantum_amberA200"
                     android:textSize="20sp"
                     app:fontFamily="@font/anton"
@@ -160,7 +164,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="16dp"
-                    android:text="@{String.valueOf(forecastday.date)}"
+                    android:text="@{String.valueOf(hourlyforecast.time)}"
                     android:textSize="18sp"
 
                     app:fontFamily="sans-serif-condensed-medium"
@@ -173,8 +177,9 @@
                     android:id="@+id/Avghumid"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
                     android:layout_marginTop="16dp"
-                    android:text="Avg Humid:"
+                    android:text="Humidity(%):"
                     android:textSize="14sp"
                     app:fontFamily="sans-serif-condensed-medium"
                     app:layout_constraintEnd_toEndOf="@+id/Max_temp_text"
@@ -185,9 +190,9 @@
                     android:id="@+id/humidityValue_value"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="20dp"
+                    android:layout_marginStart="16dp"
 
-                    android:text="@{String.valueOf(forecastday.day.avghumidity)}"
+                    android:text="@{String.valueOf(hourlyforecast.humidity)}"
                     android:textSize="13sp"
                     app:fontFamily="@font/anton"
                     app:layout_constraintBottom_toBottomOf="@+id/Avghumid"
@@ -201,6 +206,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
                     android:text="Description:"
+                    android:textSize="14sp"
                     app:fontFamily="sans-serif-condensed-medium"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -211,11 +217,12 @@
                     android:id="@+id/desc_value"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginEnd="96dp"
-                    android:text="@{String.valueOf(forecastday.day.condition.text)}"
+                    android:layout_marginStart="20dp"
+                    android:textSize="14sp"
                     app:fontFamily="@font/anton"
+                    android:text="@{hourlyforecast.condition.text}"
                     app:layout_constraintBottom_toBottomOf="@+id/Description_text"
-                    app:layout_constraintEnd_toEndOf="@+id/humidityValue_value"
+                    app:layout_constraintStart_toEndOf="@+id/Description_text"
                     app:layout_constraintTop_toTopOf="@+id/Description_text"
                     app:layout_constraintVertical_bias="1.0" />
             </androidx.constraintlayout.widget.ConstraintLayout>

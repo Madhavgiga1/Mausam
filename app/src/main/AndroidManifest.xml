@@ -37,12 +37,10 @@
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/google_maps_api_key" />
-
         <activity
             android:name=".ui.activities.IntroScreenActivity"
             android:exported="true"
-            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" >
-
+            android:theme="@style/Theme.MausamNoAction" >
         </activity>
         <activity
             android:name=".ui.activities.SignUpActivity"
@@ -54,6 +52,7 @@
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
 
         </activity>
+
         <activity
             android:name=".ui.activities.LoginActivity"
             android:exported="true"
@@ -64,7 +63,6 @@
             android:theme="@style/Theme.Mausam">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
 
