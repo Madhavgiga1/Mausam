@@ -22,7 +22,7 @@
     <fragment
         android:id="@+id/favoriteFragment"
         android:name="com.example.mausam.ui.fragments.HistoricalFragment"
-        android:label="Favorite Location"
+        android:label="Historical"
         tools:layout="@layout/fragment_historical" />
     <fragment
         android:id="@+id/forecastFragment"

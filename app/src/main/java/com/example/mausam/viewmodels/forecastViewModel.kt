@@ -7,7 +7,6 @@ import android.net.NetworkCapabilities
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.viewModelScope
-import com.example.mausam.Forecast
 import com.example.mausam.Forecast_Weather
 import com.example.mausam.data.Repository
 
@@ -15,7 +14,6 @@ import com.example.mausam.util.NetworkResult
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.launch
 import retrofit2.Response
-import retrofit2.http.QueryMap
 import java.lang.Exception
 import javax.inject.Inject
 

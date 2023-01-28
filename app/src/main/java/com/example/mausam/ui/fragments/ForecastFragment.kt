@@ -57,7 +57,7 @@ class ForecastFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
 
-        _binding=FragmentForecastBinding.inflate(layoutInflater,container,false)
+        _binding= FragmentForecastBinding.inflate(inflater,container,false)
         val view=binding.root
 
         setupRecyclerView()

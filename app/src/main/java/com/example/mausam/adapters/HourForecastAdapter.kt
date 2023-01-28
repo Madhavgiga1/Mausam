@@ -9,7 +9,7 @@ import com.example.mausam.databinding.HourlyForecastRowLayoutBinding
 class HourForecastAdapter:RecyclerView.Adapter<HourForecastAdapter.MyViewHolder>() {
     var hourer= emptyList<Hour>()//the forecast day i passed from forecast fraagment had a list of hours,this is for displaying that
     class MyViewHolder(private val binding:HourlyForecastRowLayoutBinding):RecyclerView.ViewHolder(binding.root){
-        fun bind(result:Hour){
+        fun bind(result: Hour){
             binding.hourlyforecast=result
             binding.executePendingBindings()
         }

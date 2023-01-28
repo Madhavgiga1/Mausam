@@ -1,73 +1,37 @@
 package com.example.mausam
 
-
-import com.google.gson.annotations.SerializedName
-
 data class Hour(
-    @SerializedName("chance_of_rain")
-    val chanceOfRain: Int,
-    @SerializedName("chance_of_snow")
-    val chanceOfSnow: Int,
-    @SerializedName("cloud")
+    val chance_of_rain: Int,
+    val chance_of_snow: Int,
     val cloud: Int,
-    @SerializedName("condition")
     val condition: Condition,
-    @SerializedName("dewpoint_c")
-    val dewpointC: Double,
-    @SerializedName("dewpoint_f")
-    val dewpointF: Double,
-    @SerializedName("feelslike_c")
-    val feelslikeC: Double,
-    @SerializedName("feelslike_f")
-    val feelslikeF: Double,
-    @SerializedName("gust_kph")
-    val gustKph: Double,
-    @SerializedName("gust_mph")
-    val gustMph: Double,
-    @SerializedName("heatindex_c")
-    val heatindexC: Double,
-    @SerializedName("heatindex_f")
-    val heatindexF: Double,
-    @SerializedName("humidity")
+    val dewpoint_c: Double,
+    val dewpoint_f: Double,
+    val feelslike_c: Double,
+    val feelslike_f: Double,
+    val gust_kph: Double,
+    val gust_mph: Double,
+    val heatindex_c: Double,
+    val heatindex_f: Double,
     val humidity: Int,
-    @SerializedName("is_day")
-    val isDay: Int,
-    @SerializedName("precip_in")
-    val precipIn: Double,
-    @SerializedName("precip_mm")
-    val precipMm: Double,
-    @SerializedName("pressure_in")
-    val pressureIn: Double,
-    @SerializedName("pressure_mb")
-    val pressureMb: Double,
-    @SerializedName("temp_c")
-    val tempC: Double,
-    @SerializedName("temp_f")
-    val tempF: Double,
-    @SerializedName("time")
+    val is_day: Int,
+    val precip_in: Double,
+    val precip_mm: Double,
+    val pressure_in: Double,
+    val pressure_mb: Double,
+    val temp_c: Double,
+    val temp_f: Double,
     val time: String,
-    @SerializedName("time_epoch")
-    val timeEpoch: Int,
-    @SerializedName("uv")
+    val time_epoch: Int,
     val uv: Double,
-    @SerializedName("vis_km")
-    val visKm: Double,
-    @SerializedName("vis_miles")
-    val visMiles: Double,
-    @SerializedName("will_it_rain")
-    val willItRain: Int,
-    @SerializedName("will_it_snow")
-    val willItSnow: Int,
-    @SerializedName("wind_degree")
-    val windDegree: Int,
-    @SerializedName("wind_dir")
-    val windDir: String,
-    @SerializedName("wind_kph")
-    val windKph: Double,
-    @SerializedName("wind_mph")
-    val windMph: Double,
-    @SerializedName("windchill_c")
-    val windchillC: Double,
-    @SerializedName("windchill_f")
-    val windchillF: Double
+    val vis_km: Double,
+    val vis_miles: Double,
+    val will_it_rain: Int,
+    val will_it_snow: Int,
+    val wind_degree: Int,
+    val wind_dir: String,
+    val wind_kph: Double,
+    val wind_mph: Double,
+    val windchill_c: Double,
+    val windchill_f: Double
 )

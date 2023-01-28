@@ -1,6 +1,5 @@
 package com.example.mausam.data.network
 
-import com.example.mausam.Forecast
 import com.example.mausam.Forecast_Weather
 import com.example.mausam.models.CurrentWeather.Weather
 

@@ -1,53 +1,27 @@
 package com.example.mausam
 
-
-import com.google.gson.annotations.SerializedName
-
 data class Current(
-    @SerializedName("cloud")
     val cloud: Int,
-    @SerializedName("condition")
     val condition: Condition,
-    @SerializedName("feelslike_c")
-    val feelslikeC: Double,
-    @SerializedName("feelslike_f")
-    val feelslikeF: Double,
-    @SerializedName("gust_kph")
-    val gustKph: Double,
-    @SerializedName("gust_mph")
-    val gustMph: Double,
-    @SerializedName("humidity")
+    val feelslike_c: Double,
+    val feelslike_f: Double,
+    val gust_kph: Double,
+    val gust_mph: Double,
     val humidity: Int,
-    @SerializedName("is_day")
-    val isDay: Int,
-    @SerializedName("last_updated")
-    val lastUpdated: String,
-    @SerializedName("last_updated_epoch")
-    val lastUpdatedEpoch: Int,
-    @SerializedName("precip_in")
-    val precipIn: Double,
-    @SerializedName("precip_mm")
-    val precipMm: Double,
-    @SerializedName("pressure_in")
-    val pressureIn: Double,
-    @SerializedName("pressure_mb")
-    val pressureMb: Double,
-    @SerializedName("temp_c")
-    val tempC: Double,
-    @SerializedName("temp_f")
-    val tempF: Double,
-    @SerializedName("uv")
+    val is_day: Int,
+    val last_updated: String,
+    val last_updated_epoch: Int,
+    val precip_in: Double,
+    val precip_mm: Double,
+    val pressure_in: Double,
+    val pressure_mb: Double,
+    val temp_c: Double,
+    val temp_f: Double,
     val uv: Double,
-    @SerializedName("vis_km")
-    val visKm: Double,
-    @SerializedName("vis_miles")
-    val visMiles: Double,
-    @SerializedName("wind_degree")
-    val windDegree: Int,
-    @SerializedName("wind_dir")
-    val windDir: String,
-    @SerializedName("wind_kph")
-    val windKph: Double,
-    @SerializedName("wind_mph")
-    val windMph: Double
+    val vis_km: Double,
+    val vis_miles: Double,
+    val wind_degree: Int,
+    val wind_dir: String,
+    val wind_kph: Double,
+    val wind_mph: Double
 )
