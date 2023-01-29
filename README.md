@@ -15,6 +15,10 @@ about.The user first would have to login to the app.
 ![githubmausam](https://user-images.githubusercontent.com/77728555/215290086-63ab23cb-1f86-4c30-9bd9-9530b092a657.png)
 
 
+![ezgif com-gif-maker(5)](https://user-images.githubusercontent.com/77728555/215314349-c9b57a49-6319-4c39-b776-39ecbea79d4a.gif)
+
+
+
 ![ezgif com-gif-maker(4)](https://user-images.githubusercontent.com/77728555/213926437-b8e32ef5-0f5e-4a0a-8fcc-b8548951b912.gif)
 
 
